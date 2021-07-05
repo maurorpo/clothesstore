@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.btnBasic {
+  color: #000;
+  font-size: 18px;
+  background-color: transparent;
+  box-shadow: none;
+  padding: 11px 19px;
+  transition: all .2s linear;
+  position: relative;
+}
+
+.btnIcoCart {
+  display: block;
+  margin: 0 auto;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 11px 40px;
+}
+
+.btnIcoCart::before {
+  content: '';
+  background: url('./assets/icons/ico-cart-white.svg') center no-repeat;
+  background-size: cover;
+  left: 5%;
+  top: 50%;
+  transform: translate(0, -50%);
+  position: absolute;
+  height: 12px;
+  width: 17px;
+}
+
+.btnLogin:hover {
+  background-color: #000;
+  color: #fff;
 }

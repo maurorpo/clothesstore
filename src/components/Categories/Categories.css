@@ -1,0 +1,41 @@
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 68px auto 63px;
+  width: 90%;
+}
+
+.categories .item-category {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin: 0 20px;
+}
+
+.categories .item-category:hover img {
+  transform: scale(1.5);
+}
+
+.categories .item-category h2 {
+  font-size: 50px;
+  font-weight: 800;
+  font-style: italic;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  margin: 0;
+  text-shadow: 4px 2px 5px #000000B8;
+  text-transform: uppercase;
+  transform: translate(-50%, 0);
+  width: 100%;
+  text-align: center;
+}
+
+.categories .item-category img {
+  object-fit: cover;
+  height: 100%;
+  transition: all 5s ease-in;
+  width: 100%;
+}
