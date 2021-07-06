@@ -45,3 +45,21 @@ body {
   background-color: #000;
   color: #fff;
 }
+
+.resultContent {
+  position: relative;
+}
+
+.resultContent .goBack {
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  top: 20px;
+  left: 5%;
+  position: absolute;
+}
+
+.resultContent .goBack img {
+  margin-right: 10px;
+}

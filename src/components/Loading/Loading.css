@@ -1,0 +1,14 @@
+.loading {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.loading h3 {
+  display: block;
+  width: 100%;
+  font-size: 50px;
+}

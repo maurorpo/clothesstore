@@ -1,7 +1,9 @@
-const BannerHome = () => {
+import './BannerHome.css'
+
+const BannerHome = ({imgBanner}) => {
   return(
-    <div className="BannerHome">
-      <h3>Banner home</h3>
+    <div className="bannerHome">
+      <img src={imgBanner} alt="Imagen principal banner" />
     </div>
   );
 }

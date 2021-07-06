@@ -1,13 +1,16 @@
+//Components
+import Search from '../Search';
 import './Header.css'
 
-const Header = ({logo, cart, profile}) => {
+const Header = ({logo, cart, profile, search, searchInput, textSearch}) => {
   return(
     <section className="header">
       <div className="logo">
         <img src={logo} alt="Logo Clotesstore" />
       </div>
+      
       <div className="searcher">
-
+        <Search search={search} searchInput={searchInput} textSearch={textSearch} />
       </div>
 
       <div className="elements-header">
@@ -20,7 +23,7 @@ const Header = ({logo, cart, profile}) => {
         </div>
 
         <div className="elementHeader login">
-          <button type="button" className="btnBasic">Iniciar sección</button>
+          <button type="button" className="btnBasic">Iniciar sesión</button>
         </div>
       </div>
     </section>
