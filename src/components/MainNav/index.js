@@ -6,12 +6,12 @@ const MainNav = () => {
     <section className="mainNav">
       <nav className="navBar">
         <ul className="list-items">
-          <li className="item-nav"><a href="#">Hombre</a></li>
-          <li className="item-nav"><a href="#">Mujer</a></li>
-          <li className="item-nav"><a href="#">Junior</a></li>
-          <li className="item-nav"><a href="#">Niños</a></li>
-          <li className="item-nav"><a href="#">Accesorios</a></li>
-          <li className="item-nav"><a href="#">Ofertas</a></li>
+          <li className="item-nav"><button>Hombre</button></li>
+          <li className="item-nav"><button>Mujer</button></li>
+          <li className="item-nav"><button>Junior</button></li>
+          <li className="item-nav"><button>Niños</button></li>
+          <li className="item-nav"><button>Accesorios</button></li>
+          <li className="item-nav"><button>Ofertas</button></li>
         </ul>
       </nav>
     </section>

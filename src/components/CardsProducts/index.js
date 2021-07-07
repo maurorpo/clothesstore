@@ -1,32 +1,20 @@
-//Import hooks
 import React from 'react';
 import { useEffect, useState } from "react";
 
-//Components
 import ItemProducts from "../ItemProducts";
 import Loading from '../Loading'
 
-const ProductsHome = () => {
-  
-  //Creo estado para los productos
+const ProductsHome = ({ addProductCart, handleCart }) => {
+
   const [products, setProducts] = useState('')
   
-
   useEffect(() => {
-    //Consumo api de productos categoria "Ropa y accesorios"
     fetch('https://api.mercadolibre.com/sites/MCO/search?limit=20&category=MCO1430')
       .then((response) => response.json())
-      .then((json) =>{
-        // const productsRandom = Math.floor(Math.random(4)* 4 );
-        setProducts(json.results)
+      .then(({results}) =>{
+        setProducts(results)
       });
-  }, []); //Dependencia que ejecuta solo una vez el hook
-
-  //Valido el estado productos
-  if (products.length === 0 ) {
-    
-    return <Loading />
-  }
+  }, []);
 
   return(
     <section className="productsList">
@@ -34,9 +22,17 @@ const ProductsHome = () => {
       
       <ul className="listProducts">
           {
-            products.slice(0,4).map((product) => (
+            !products.length ? <Loading /> : products.slice(0,4).map(({id, title, price, thumbnail}) => (
               
-              <ItemProducts key={product.id} title={product.title} price={product.price} image={product.thumbnail} />
+              <ItemProducts
+                key={id}
+                title={title}
+                productId={id}
+                price={price}
+                image={thumbnail}
+                addProductCart={addProductCart}
+                handleCart={handleCart}
+              />
             ))
           }
       </ul>

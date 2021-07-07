@@ -1,12 +1,17 @@
+import { Link } from "react-router-dom";
+
 //Components
 import Search from '../Search';
 import './Header.css'
 
-const Header = ({logo, cart, profile, search, searchInput, textSearch}) => {
+const Header = ({logo, cart, profile, search, searchInput, textSearch, countCart }) => {
+  
   return(
     <section className="header">
       <div className="logo">
-        <img src={logo} alt="Logo Clotesstore" />
+        <Link to="/">
+          <img src={logo} alt="Logo Clotesstore" />
+        </Link>
       </div>
       
       <div className="searcher">
@@ -15,7 +20,10 @@ const Header = ({logo, cart, profile, search, searchInput, textSearch}) => {
 
       <div className="elements-header">
         <div className="elementHeader icoCart">
-          <img src={cart} alt="Icono carrito" />
+          <Link to="/cart">
+            <div className="cartCount">{countCart}</div>
+            <img src={cart} alt="Icono carrito" />
+          </Link>
         </div>
 
         <div className="elementHeader icoProfile">

@@ -7,7 +7,7 @@ import './Loading.css'
 const Loading = () => {
   return(
     <div className="loading">
-      <h3>Cargando resultados</h3>
+      <h3>Cargando contenido</h3>
       <CircularProgress />
     </div>
   )

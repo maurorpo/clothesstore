@@ -9,11 +9,11 @@ const Footer = ({ facebook, twitter, instagram, youtube }) => {
           <h2 className="titleCategory">POLÍTICAS</h2>
           <nav className="menuFooter">
             <ul className="listItems">
-              <li className="itemMenu"><a href="#">Políticas de privacidad</a></li>
-              <li className="itemMenu"><a href="#">Políticas de cambio</a></li>
-              <li className="itemMenu"><a href="#">Políticas de envío</a></li>
-              <li className="itemMenu"><a href="#">Términos y condiciones</a></li>
-              <li className="itemMenu"><a href="#">Responsabilidad social</a></li>
+              <li className="itemMenu"><button>Políticas de privacidad</button></li>
+              <li className="itemMenu"><button>Políticas de cambio</button></li>
+              <li className="itemMenu"><button>Políticas de envío</button></li>
+              <li className="itemMenu"><button>Términos y condiciones</button></li>
+              <li className="itemMenu"><button>Responsabilidad social</button></li>
             </ul>
           </nav>
         </div>
@@ -22,9 +22,9 @@ const Footer = ({ facebook, twitter, instagram, youtube }) => {
           <h2 className="titleCategory">SOBRE NOSOTROS</h2>
           <nav className="menuFooter">
             <ul className="listItems">
-              <li className="itemMenu"><a href="#">Encuentra tu tienda</a></li>
-              <li className="itemMenu"><a href="#">Contáctanos</a></li>
-              <li className="itemMenu"><a href="#">Trabaja con nosotros</a></li>
+              <li className="itemMenu"><button>Encuentra tu tienda</button></li>
+              <li className="itemMenu"><button>Contáctanos</button></li>
+              <li className="itemMenu"><button>Trabaja con nosotros</button></li>
             </ul>
           </nav>
         </div>
@@ -34,24 +34,24 @@ const Footer = ({ facebook, twitter, instagram, youtube }) => {
           <nav className="menuFooter">
             <ul className="listItems listItemsSocial">
               <li className="itemMenu">
-                <a href="#">
+                <button>
                   <img src={facebook} alt="Icono facebook" />
-                </a>
+                </button>
               </li>
               <li className="itemMenu">
-                <a href="#">
+                <button>
                   <img src={twitter} alt="Icono facebook" />
-                </a>
+                </button>
               </li>
               <li className="itemMenu">
-                <a href="#">
+                <button>
                   <img src={instagram} alt="Icono facebook" />
-                </a>
+                </button>
               </li>
               <li className="itemMenu">
-                <a href="#">
+                <button>
                   <img src={youtube} alt="Icono facebook" />
-                </a>
+                </button>
               </li>
             </ul>
           </nav>

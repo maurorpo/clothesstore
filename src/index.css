@@ -41,6 +41,10 @@ body {
   width: 17px;
 }
 
+#root {
+  overflow: hidden;
+}
+
 .btnLogin:hover {
   background-color: #000;
   color: #fff;

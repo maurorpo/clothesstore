@@ -10,18 +10,27 @@
   padding: 0;
 }
 
-.list-items .item-nav a{
+.list-items .item-nav button{
+  background-color: transparent;
   font-size: 31px;
   font-weight: 700;
   color: #fff;
   display: block;
+  border: none;
   text-decoration: none;
   padding: 11px 50px;
   border-left: solid #fff 1px;
   border-right: solid #fff 1px;
 }
 
-.list-items .item-nav:first-child a,
-.list-items .item-nav:last-child a {
+.list-items .item-nav:first-child button,
+.list-items .item-nav:last-child button {
   border: none;
+}
+
+@media(max-width: 660px) {
+  .list-items .item-nav button {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
 }

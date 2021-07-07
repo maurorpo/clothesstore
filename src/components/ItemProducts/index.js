@@ -1,7 +1,11 @@
 //css
 import './ItemProducts.css';
 
-const ItemProducts = ({ title, price, image }) => {
+const ItemProducts = ({ title, price, image, productId, handleCart }) => {
+  
+  const handleAdd = () => {
+    handleCart(productId);
+  }
 
   return(
     <li>
@@ -12,7 +16,7 @@ const ItemProducts = ({ title, price, image }) => {
         <div className="datsProducts">
           <h3 className="titleProduct">{title}</h3>
           <p className="priceProduct">${price}</p>
-          <button type="button" className="btnBasic btnIcoCart">Añadir al carrito</button>
+          <button onClick={ handleAdd } className="btnBasic btnIcoCart">Añadir al carrito</button>
         </div>
       </div>
     </li>

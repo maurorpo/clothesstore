@@ -26,8 +26,10 @@
   margin-bottom: 17px;
 }
 
-.footer .listItems .itemMenu a {
+.footer .listItems .itemMenu button {
   font-size: 20px;
+  background-color: transparent;
+  border: none;
   font-weight: 100;
   color: #fff;
   text-decoration: none;
@@ -35,7 +37,7 @@
   transition: all .2s linear;
 }
 
-.footer .listItems .itemMenu a::before {
+.footer .listItems .itemMenu button::before {
   content: '';
   background-color: #fff;
   bottom: 10px;
@@ -47,7 +49,7 @@
   transition: all .2s linear;
 }
 
-.footer .listItems .itemMenu a:hover::before {
+.footer .listItems .itemMenu button:hover::before {
   opacity: 1;
   bottom: -5px;
 }
@@ -78,4 +80,16 @@
   color: #fff;  
   font-size: 20px;
   font-weight: 100;
+}
+
+@media(max-width: 660px) {
+  .footer .mainContent {
+    flex-wrap: wrap;
+  }
+
+  .footer .mainContent .sectCatFooter {
+    padding: 0 20px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
 }

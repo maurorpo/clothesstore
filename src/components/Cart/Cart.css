@@ -1,0 +1,58 @@
+.intCart {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.intCart h1 {
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.intCart .listItemsCart ul {
+  padding: 0;
+  margin: 0;
+}
+
+.intCart .listItemsCart ul .itemProductCart {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border-bottom: solid gray 1px;
+  margin-bottom: 15px;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.intCart .listItemsCart ul .itemProductCart:last-child {
+  border: none;
+}
+
+.intCart .listItemsCart ul .itemProductCart .contentImage {
+  width: 15%;
+}
+.intCart .listItemsCart ul .itemProductCart .titleProduct {
+  color: #6B6B6B;
+  font-size: 22px;
+  font-weight: 100;
+  padding-right: 40px;
+  width: 50%;
+}
+.intCart .listItemsCart ul .itemProductCart .priceProduct {
+  color: #5B17AA;
+  font-size: 24px;
+  font-weight: 700;
+  width: 15%;
+}
+.intCart .listItemsCart ul .itemProductCart .actionsContent {
+  width: 15%;
+}
+
+.intCart .listItemsCart ul .itemProductCart .actionsContent button {
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: red;
+  border-radius: 10px;
+}
